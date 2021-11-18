@@ -1,0 +1,33 @@
+body {
+  counter-reset: section;
+  counter-reset: heading;
+}
+
+h3::before {
+  counter-increment: section;
+  content: counter(section) ": ";
+}
+
+h1::before {
+  content: counter(heading) ") ";
+  counter-increment: heading;
+}
+
+h1 {
+  counter-reset: subheading;
+}
+
+h2::before {
+  content: counter(heading) "." counter(subheading) ") ";
+  counter-increment: subheading;
+}
+
+ol {
+  counter-reset: counter;
+  list-style: none;
+}
+
+li::before {
+  counter-increment: counter;
+  content: counters(counter, ".") " ";
+}/*# sourceMappingURL=counter.css.map */

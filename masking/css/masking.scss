@@ -1,0 +1,20 @@
+/* /* body{
+    background: #333;
+} */
+img{
+    width:100%;
+     mask-image: url(mask-image.png);
+    -webkit-mask-image: url(mask-image.png); 
+    /* mask-image: linear-gradient(to bottom, transparent 25%,  black 75%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 25%,  black 75%); */
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat:no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center; 
+  
+    /* mask: linear-gradient(to bottom, transparent 25%,  black 75%), no-repeat, center, url(mask-image.png), no-repeat;
+    -webkit-mask: linear-gradient(to bottom, transparent 25%,  black 75%), center, url(mask-image.png) , no-repeat; */
+    /* mask-origin: border-box;
+    -webkit-mask-origin:border-box;*/
+    
+}
