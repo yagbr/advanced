@@ -8,13 +8,12 @@ h3::before{
    content: counter(section)": ";
 }
 
-h1::before{
-    content: counter(heading)") ";
-    counter-increment: heading;
-}
-
 h1 {
     counter-reset: subheading;
+    &::before{
+        content: counter(heading)") ";
+        counter-increment: heading;
+    }
 }
 
 h2::before {

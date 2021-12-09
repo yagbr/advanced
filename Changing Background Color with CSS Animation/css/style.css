@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  -webkit-animation: changeBg 10s linear infinite;
+          animation: changeBg 10s linear infinite;
+  display: grid;
+  place-content: center;
+}
+
+@-webkit-keyframes changeBg {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: yellow;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: #ff5722;
+  }
+  80% {
+    background-color: yellowgreen;
+  }
+  100% {
+    background-color: #9c27b0;
+  }
+}
+
+@keyframes changeBg {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: yellow;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: #ff5722;
+  }
+  80% {
+    background-color: yellowgreen;
+  }
+  100% {
+    background-color: #9c27b0;
+  }
+}/*# sourceMappingURL=style.css.map */
